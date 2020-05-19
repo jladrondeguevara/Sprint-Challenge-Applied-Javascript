@@ -43,6 +43,8 @@ const cardMaker = (article) => {
 
 
     headline.textContent = article.headline;
+    image.setAttribute('src', article.authorPhoto);
+    authorName.textContent = article.authorName;
 
     card.classList.add('card')
     headline.classList.add('headline')
@@ -54,7 +56,6 @@ const cardMaker = (article) => {
     authorDiv.appendChild(imageContainer);
     imageContainer.appendChild(image);
     authorDiv.appendChild(authorName);
-
     
 
     return card;
